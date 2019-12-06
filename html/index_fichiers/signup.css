@@ -2,10 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Mukta');
 
+
+
 body {
     background-image: url(../../images/bg_login.jpg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .login-panel{
