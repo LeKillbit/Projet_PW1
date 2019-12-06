@@ -1,9 +1,17 @@
+/* import d'un style de police */
+
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+body {
+    background-image: url(../../images/bg_login.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
 .login-panel{
+    font-family: 'Mukta', sans-serif;
     position: relative;
-    top: 50%;
-    transform: translateY(0%);
-    text-align: center;
-    margin: auto;
+    top:10%;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -11,18 +19,45 @@
     background-color: rgba(255,255, 255, 1);
     height:500px;
     position:relative;
-    bottom : 50%;
-    left : 25%;
-    width:50%;
-    z-index:0;
+    left : 40%;
+    width: 20%;
+    top: 100px;
     box-shadow: 0 0 15px 9px #00000096;
 }
 
 .register{
     z-index: 1;
-    position: relative;
-    bottom:10%;
     color:#242424;
-    text-align:center;
+    text-align:left;
     padding:50px;
+}
+
+.register input[type="text"], .register input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.register input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+
+
+.inp{
+    padding:10px;
+    display: block;
+    outline: none;
+    text-transform: uppercase;
 }
