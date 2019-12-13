@@ -27,7 +27,7 @@
 
 <body>
     <!-- Logique de la topbar, lien avec les autres pages -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-4">
         <a class="navbar-brand" href="index.html">Welcome to Travel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,17 +53,54 @@
         </div>
     </nav>
 
-    <div class="white-panel">
-        <div class="login-panel">
-            <div class="register">
-                    <h2>REGISTER</h2>
-                    <input type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                    <input type="button" value="Register">
+    <!-- login panel -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3" style="padding: 50px;">
+                <div class="white-panel">
+                    <div class="login-panel">
+                        <div class="register">
+                            <h2>SIGN UP</h2>
+                            <input type="text" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="button" value="Sign Up">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1" style="padding: 50px;">
+                <div class="white-panel">
+                    <div class="login-panel">
+                        <div class="get_account">
+                            <h1 style="text-align: center;">HOW TO GET AN ACCOUNT</h1>
+                            <ol style="padding:20px;">
+                                <li style="padding:10px;">Fill in a valid email</li>
+                                <li style="padding:10px;">Check your inbox for the verification email</li>
+                                <li style="padding:10px;">Click on the account validation link</li>
+                                <li style="padding:10px;">That's it !</li>
+                            </ol>
+                            <h2 style="text-align: center;">ENJOY IT!</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    </div>
+
+
+    <!-- footer avec anchor pour revenir en haut de la page -->
+    <footer class="footer">
+        <div class="container">
+            <a href="signup.html">Top of the page</a>
+        </div>
+    </footer>
+
 
 </body>
 
