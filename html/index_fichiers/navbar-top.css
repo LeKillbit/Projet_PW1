@@ -1,4 +1,16 @@
-/* Show it's not fixed to the top */
+/*Ajout d'une couleur lorsqu'on passe la souris sur un bouton de la barre de navigation*/
+
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index: 1;
+}
+
+.nav-item:hover{
+  background-color: #ff9000;
+
+}
+
 body {
   min-height: 75rem;
 }
