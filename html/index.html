@@ -3,12 +3,9 @@
 
 <head>
     <!-- Titre de la page, import du css -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="../images/Palm_icon.png">
 
     <title>Travel</title>
 
@@ -30,13 +27,48 @@
     
         p{
             color:#ffffff;
-            font-family: fantasy, sans-serif;
+            font-family: helvetica, sans-serif;
         }
         
         .card-header{
         background-color: #ff9000;
         }
+		
+		.dealButton {
+		background-color: #ff9000;
+		border: none;
+		text-align: center;
+		padding: 15px 32px;
+		color: white;
+		display: inline-block;
+		font-size: 16px;
+		}
+		.dealButton:hover{
+			background-color: #fe4410;
+			color: #010000;
+		}
+		
+		.white-panel{
+		background-color: rgba(255,255, 255, 1);
+		height:450px;
+		position:relative;
+		top: 100px;
+		box-shadow: 0 0 15px 9px #00000096;
+		padding : 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
         
+		table,td,th{
+            border:1px solid black;
+        }
+        
+		td,th{
+            text-align:center;
+            padding:10px;
+        }
+		
     </style>
 </head>
 
@@ -66,26 +98,77 @@
         </div>
     </nav>
 
-    <main role="main" class="container">
+    <main class="container">
 
-        <div>        
+        <div><!--Paragraphe d'accueil-->
             <p style="font-size:50px; text-align:center; font-weight:bold; position:relative; top:50px">
                 Welcome to Travel ! Find the ideal place to spend your next vacation in the dozens of destinations we offer !
             </p>
         </div>
 
-                    <div class="card" style="width: 50rem;margin:0 auto;position:relative;top:100px"> <!-- Permet de centrer la card -->
-                        <div class="card-header">
-                            <p class="card-title" style="font-size: 20px"> Promo du moment </p>
-                        </div>
-                        <div class="card-body">
-                            <img class="card-img-top" src="../images/imageGrece.jpg" alt="Image village Santorin">
-                        </div>
+        <div class="card" style="width: 50rem;margin:0 auto;position:relative;top:100px"> <!--Card contenant le "Today's deal". Le css permet de centrer la card -->
+            <div class="card-header">
+				<p style="float: right; text-align: right;"><!-- Le css permet d'avoir du texte à droite-->
+					Price: <del> 490$ </del> 349$
+				</p>
+                <p class="card-title" style="font-size: 30px"> Today's deal: Santorini, Greece </p>
+            </div>
+            <div class="card-body">
+                <img class="card-img-top" src="../images/imageGrece.jpg" alt="Image village Santorini">
+			</div>
+			<button class="dealButton" onclick="window.location.href = './destinations.html';"> >>Take me to the deal !</button>
 
-                </div>
-        <div>     
-            
         </div>
+		
+		<div class="row">
+            <div class="col-10 offset-1" style="padding: 50px; position:relative;top:100px">
+                <div class="white-panel"> <!-- Dernier pannel-->
+                    <h4>Become a premium member and get unique advantages:</h4>
+					<table style="margin:auto;"><!--Table contenant les différentes informations sur le premium-->
+						<thead style="background-color:gray">
+							<tr>
+								<th rowspan="2">Advantage</th>
+								<th colspan="2">Status</th>
+							</tr>
+							<tr>
+								<td>Free Member</td>
+								<td>Premium Member</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Cancellation insurance</th>
+								<td>Paid option</td>
+								<td rowspan="3">
+									<img 
+										src="../images/check.png"
+										alt="Yes"
+										height="30"
+										width="30"
+									>
+								</td>
+							</tr>
+							<tr>
+								<th>Earn reward points with each purchase</th>
+								<td rowspan="2">
+									<img 
+										src="../images/cross.png"
+										alt="No"
+										height="30"
+										width="30"
+									>
+								</td>
+							</tr>
+							<tr>
+								<th>Access to limited deals 24 hours in advance</th>
+							</tr>
+						</tbody>
+					</table>
+					<p style="color: black;">Click <a href="" style="text-decoration:underline;">here</a> to learn more.</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Bootstrap core JavaScript
