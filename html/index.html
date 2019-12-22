@@ -31,7 +31,7 @@
             font-family: helvetica, sans-serif;
         }
         
-        .card-header{
+        .card-body{
         background-color: #ff9000;
         }
 		
@@ -103,15 +103,13 @@
         </div>
 
         <div class="card" style="width: 50rem;margin:0 auto;position:relative;top:100px"> <!--Card contenant le "Today's deal". Le css permet de centrer la card -->
-            <div class="card-header">
+            <div class="card-body">
 				<p style="float: right; text-align: right;"><!-- Le css permet d'avoir du texte à droite-->
 					Price: <del> 490$ </del> 349$
 				</p>
-                <p class="card-title" style="font-size: 30px"> Today's deal: Santorini, Greece </p>
+                <p style="font-size: 30px"> Today's deal: Santorini, Greece </p>
             </div>
-            <div class="card-body">
-                <img class="card-img-top" src="../images/imageGrece.jpg" alt="Image village Santorini">
-			</div>
+            <img class="card-img-bottom" src="../images/imageGrece.jpg" alt="Image village Santorini">
 			<button class="dealButton" onclick="window.location.href = './destinations.html';"> >>Take me to the deal !</button>
 
         </div>
