@@ -18,14 +18,6 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.white-panel{
-    background-color: rgba(255,255, 255, 1);
-    height:600px;
-    position:relative;
-    top: 100px;
-    box-shadow: 0 0 15px 9px #00000096;
-    padding : 25px;
-}
 
 .register{
     color:#242424;
